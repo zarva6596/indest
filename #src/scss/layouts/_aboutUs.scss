@@ -1,0 +1,55 @@
+.aboutUs {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   &__info {
+      position: relative;
+      padding: 0 30px 0 190px;
+      max-width: 1000px;
+
+      &-photo {
+         display: none;
+      }
+   }
+
+   &__heading {
+      margin: 12px 0 43px;
+   }
+
+   &__paragraph {
+      margin-bottom: 30px;
+   }
+}
+
+@media (max-width: 1100px) {
+   .aboutUs {
+      &__photo {
+         display: none;
+      }
+
+      &__info {
+         padding: 0;
+
+         &-photo {
+            display: block;
+            width: 100%;
+            margin-bottom: 32px;
+         }
+      }
+
+      &__heading {
+         margin: 3px 0 19px;
+      }
+
+      &__button {
+         position: relative;
+         left: 50%;
+         transform: translateX(-50%);
+      }
+
+      br {
+         display: none;
+      }
+   }
+}

@@ -1,0 +1,64 @@
+.login {
+   position: relative;
+   padding: 0 30px 0 25px;
+   margin-left: 62px;
+
+   &::before {
+      content: "";
+      width: 1px;
+      height: 26px;
+      background-color: #979797;
+      position: absolute;
+      left: 0;
+      top: 2px;
+   }
+
+   .icon-user {
+      margin-right: 14px;
+      padding: 7px;
+      border: 1px solid #fff;
+      border-radius: 50%;
+      transition: all .5s;
+   }
+
+   &__link {
+      display: flex;
+      align-items: center;
+      color: #fff;
+      font-size: 16px;
+      transition: all .5s;
+
+      &:hover,
+      &:hover .icon-user {
+         color: #6fb8d9;
+         border-color: #6fb8d9;
+      }
+   }
+}
+
+@media (max-width: 1100px) {
+   .login {
+      margin-left: 0;
+      margin-top: 80px;
+      padding: 8px 24px 9px 28px;
+      border: 1px solid #000;
+
+      &::before {
+         display: none;
+      }
+
+      &__icon {
+         border-color: #12161e;
+      }
+
+      &__link {
+         color: #12161e;
+      }
+   }
+}
+
+@media (max-width: 350px) {
+   .login {
+      margin-top: 50px;
+   }
+}

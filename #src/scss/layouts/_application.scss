@@ -1,0 +1,76 @@
+.application {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: #12161e;
+   padding: 178px 80px 130px;
+
+   &__photo {
+      height: 750px;
+      width: 620px;
+   }
+
+   &__form {
+      padding: 0 160px 0 80px;
+      max-width: 640px;
+   }
+}
+
+.form {
+   &__heading {
+      margin-bottom: 83px;
+   }
+
+   &__title {
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 21px;
+      letter-spacing: 4px;
+      color: #FFFFFF;
+      text-transform: uppercase;
+
+      margin-bottom: 24px;
+      display: block;
+   }
+
+   &__input {
+      margin-bottom: 60px;
+   }
+}
+
+@media (max-width: 1100px) {
+   .application {
+      padding: 46px 18px 110px;
+
+      &__photo {
+         display: none;
+      }
+
+      &__form {
+         padding: 0;
+         max-width: none;
+      }
+   }
+
+   .form {
+      &__heading {
+         font-size: 32px;
+         line-height: 53px;
+         margin-bottom: 34px;
+      }
+   
+      &__title {   
+         margin-bottom: 18px;
+      }
+   
+      &__input {
+         margin-bottom: 58px;
+      }
+
+      &__button {
+         position: relative;
+         left: 50%;
+         transform: translateX(-50%);
+      }
+   }
+}
